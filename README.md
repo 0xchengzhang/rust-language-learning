@@ -1,4 +1,3 @@
-# rust-language-learning
 rust权威指南
 
 rust authoritative guide
