@@ -1,3 +1,6 @@
+/**
+ * 不在 prelude中，需要显式用use导入
+ */
 use std::io;
 use std::cmp::Ordering;
 use rand::Rng;
@@ -10,10 +13,12 @@ fn main() {
     loop {
         println!("Please input your guess.");
 
+        /**
+         * rust中 默认所有的变量是不可变的，immutable，mutable可变.
+         */
         let mut guess = String::new();
 
-        io::stdin().read_line(&mut guess)
-            .expect("Failed to read line");
+        io::stdin().read_line(&mut guess).expect("Failed to read line");
 
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
