@@ -4,6 +4,7 @@
 
 [rust版本控制](https://rustwiki.org/zh-CN/edition-guide/rust-2018/rustup-for-managing-rust-versions.html)
 
+```
 /**
 * 比较耗费时间，少用
 **/
@@ -33,3 +34,4 @@ cargo update
 * 清楚target文件
 **/
 cargo clean
+```
